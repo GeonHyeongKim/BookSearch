@@ -11,6 +11,7 @@
 		C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADEFF32A55871500EC962C /* ContentView.swift */; };
 		C4ADEFF62A55871600EC962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ADEFF52A55871600EC962C /* Assets.xcassets */; };
 		C4ADEFF92A55871600EC962C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ADEFF82A55871600EC962C /* Preview Assets.xcassets */; };
+		C4ADF0072A55982100EC962C /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0062A55982100EC962C /* BookListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C4ADEFF32A55871500EC962C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4ADEFF52A55871600EC962C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4ADEFF82A55871600EC962C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4ADF0062A55982100EC962C /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C4ADEFF32A55871500EC962C /* ContentView.swift */,
+				C4ADF0052A5597EB00EC962C /* Book */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 				C4ADEFF52A55871600EC962C /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C4ADF0052A5597EB00EC962C /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF0062A55982100EC962C /* BookListView.swift */,
+			);
+			path = Book;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
+				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
 				C4ADEFF22A55871500EC962C /* BookSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
