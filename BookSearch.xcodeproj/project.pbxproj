@@ -12,6 +12,7 @@
 		C4ADEFF62A55871600EC962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ADEFF52A55871600EC962C /* Assets.xcassets */; };
 		C4ADEFF92A55871600EC962C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ADEFF82A55871600EC962C /* Preview Assets.xcassets */; };
 		C4ADF0072A55982100EC962C /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0062A55982100EC962C /* BookListView.swift */; };
+		C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C4ADEFF52A55871600EC962C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4ADEFF82A55871600EC962C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4ADF0062A55982100EC962C /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		C4ADEFFF2A55928E00EC962C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4ADF0082A55A56600EC962C /* Modifiers */,
 				C4ADF0042A55972200EC962C /* Assets */,
 			);
 			path = Resources;
@@ -116,6 +119,14 @@
 				C4ADF0062A55982100EC962C /* BookListView.swift */,
 			);
 			path = Book;
+			sourceTree = "<group>";
+		};
+		C4ADF0082A55A56600EC962C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			files = (
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
+				C4ADF0072A55982100EC962C /* BookListView.swift in Sources */,
 				C4ADEFF22A55871500EC962C /* BookSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
