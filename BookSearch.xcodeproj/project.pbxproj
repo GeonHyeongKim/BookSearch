@@ -51,8 +51,9 @@
 		C4ADEFF02A55871500EC962C /* BookSearch */ = {
 			isa = PBXGroup;
 			children = (
-				C4ADEFF12A55871500EC962C /* BookSearchApp.swift */,
-				C4ADEFF32A55871500EC962C /* ContentView.swift */,
+				C4ADF0012A5592C700EC962C /* App */,
+				C4ADEFFF2A55928E00EC962C /* Resources */,
+				C4ADF0002A55929900EC962C /* Sources */,
 				C4ADEFF52A55871600EC962C /* Assets.xcassets */,
 				C4ADEFF72A55871600EC962C /* Preview Content */,
 			);
@@ -65,6 +66,37 @@
 				C4ADEFF82A55871600EC962C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4ADEFFF2A55928E00EC962C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4ADF0002A55929900EC962C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF0022A5592E100EC962C /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C4ADF0012A5592C700EC962C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADEFF12A55871500EC962C /* BookSearchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4ADF0022A5592E100EC962C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADEFF32A55871500EC962C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
