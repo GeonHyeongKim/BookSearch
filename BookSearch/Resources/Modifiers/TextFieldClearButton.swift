@@ -15,13 +15,13 @@ struct TextFieldClearButton: ViewModifier {
 		HStack {
 			content
 			
-			if !text.isEmpty {
+			if !text.isEmpty { // 비어 있지 않을 경우
 				Button(action: {
-					self.text = ""
+					self.text = "" // 초기화
 				}) {
 					Image(systemName: "xmark.circle")
 						.foregroundColor(Color(UIColor.opaqueSeparator))
-				}
+				} // Button
 			}
 		}
 	}
