@@ -19,5 +19,9 @@ struct Book: Codable, Hashable {
 	let author_name: [String]?		// 저자
 	let publisher: [String]?		// 출판사
 	let first_publish_year: Int?	// 첫 출판 연도
+	
+	static func getDummy() -> Self {
+		return Book(cover_i: 9255566, title: "The Fellowship of the Ring", author_name: ["J.R.R. Tolkien"], publisher: ["Book on Demand Pod", "Mariner Books"], first_publish_year: 1954)
+	}
 }
 
