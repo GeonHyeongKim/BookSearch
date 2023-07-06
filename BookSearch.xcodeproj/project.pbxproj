@@ -14,7 +14,7 @@
 		C4ADF0072A55982100EC962C /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0062A55982100EC962C /* BookListView.swift */; };
 		C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */; };
 		C4ADF00F2A565F1D00EC962C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF00E2A565F1D00EC962C /* Book.swift */; };
-		C4ADF0142A5662B600EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0132A5662B600EC962C /* APIConstants.swift */; };
+		C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02B2A5673D800EC962C /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		C4ADF0062A55982100EC962C /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		C4ADF00E2A565F1D00EC962C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		C4ADF0132A5662B600EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		C4ADF02B2A5673D800EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,7 @@
 			children = (
 				C4ADEFF02A55871500EC962C /* BookSearch */,
 				C4ADEFEF2A55871500EC962C /* Products */,
+				C4ADF02A2A5672AC00EC962C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +147,16 @@
 		C4ADF01B2A566D4B00EC962C /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C4ADF01E2A566DB500EC962C /* APIConstants.swift */,
+				C4ADF02B2A5673D800EC962C /* APIConstants.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C4ADF02A2A5672AC00EC962C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
-				C4ADF0142A5662B600EC962C /* APIConstants.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
-				C4ADF01F2A566DB500EC962C /* APIConstants.swift in Sources */,
+				C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */,
 				C4ADF0072A55982100EC962C /* BookListView.swift in Sources */,
 				C4ADF00F2A565F1D00EC962C /* Book.swift in Sources */,
 				C4ADEFF22A55871500EC962C /* BookSearchApp.swift in Sources */,
