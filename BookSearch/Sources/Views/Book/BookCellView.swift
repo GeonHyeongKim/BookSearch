@@ -16,7 +16,7 @@ struct BookCellView: View {
 	let book: Book
 
     var body: some View {
-		NavigationLink(destination: EmptyView()) {
+		NavigationLink(destination: BookDetailView(book: book)) {
 			HStack {
 				Group {
 					if let image = image {
@@ -55,7 +55,7 @@ struct BookCellView: View {
 						self.image = image
 					}
 				} catch {
-					print(#file, #function, #line, error)
+					print("Error", #file, #function, #line, error)
 				}
 				isLoading = false
 			} // Task
