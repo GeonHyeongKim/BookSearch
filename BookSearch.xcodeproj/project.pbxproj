@@ -14,6 +14,7 @@
 		C4ADF0072A55982100EC962C /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0062A55982100EC962C /* BookListView.swift */; };
 		C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */; };
 		C4ADF00F2A565F1D00EC962C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF00E2A565F1D00EC962C /* Book.swift */; };
+		C4ADF01F2A566DB500EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF01E2A566DB500EC962C /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C4ADF0062A55982100EC962C /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		C4ADF00E2A565F1D00EC962C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C4ADF01E2A566DB500EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C4ADF00D2A565EF300EC962C /* Models */,
+				C4ADF01B2A566D4B00EC962C /* Network */,
 				C4ADF0022A5592E100EC962C /* Views */,
 			);
 			path = Sources;
@@ -138,6 +141,14 @@
 				C4ADF00E2A565F1D00EC962C /* Book.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C4ADF01B2A566D4B00EC962C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF01E2A566DB500EC962C /* APIConstants.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			files = (
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
+				C4ADF01F2A566DB500EC962C /* APIConstants.swift in Sources */,
 				C4ADF0072A55982100EC962C /* BookListView.swift in Sources */,
 				C4ADF00F2A565F1D00EC962C /* Book.swift in Sources */,
 				C4ADEFF22A55871500EC962C /* BookSearchApp.swift in Sources */,
