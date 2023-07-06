@@ -15,6 +15,7 @@
 		C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */; };
 		C4ADF00F2A565F1D00EC962C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF00E2A565F1D00EC962C /* Book.swift */; };
 		C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02B2A5673D800EC962C /* APIConstants.swift */; };
+		C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02D2A56814600EC962C /* BookViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C4ADF0092A55A59300EC962C /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		C4ADF00E2A565F1D00EC962C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C4ADF02B2A5673D800EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		C4ADF02D2A56814600EC962C /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C4ADF0062A55982100EC962C /* BookListView.swift */,
+				C4ADF02D2A56814600EC962C /* BookViewModel.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
+				C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
 				C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */,
 				C4ADF0072A55982100EC962C /* BookListView.swift in Sources */,

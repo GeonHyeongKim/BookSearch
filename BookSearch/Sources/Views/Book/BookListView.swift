@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BookListView: View {
 	//MARK: Property Wrapper
+	@StateObject private var viewModel: BookViewModel = BookViewModel()
 	@State private var searchText = ""
 
     var body: some View {
@@ -21,10 +22,21 @@ struct BookListView: View {
 				TextField("검색어를 입력해주세요", text: $searchText)
 					.modifier(TextFieldClearButton(text: $searchText))
 			} // HStack
+			ScrollView {
+				LazyVStack {
+					Text("\(viewModel.book.count)")
+				}
+			}
 		} // VStack
 		.padding()
 		.navigationTitle("검색 화면")
 		.navigationBarTitleDisplayMode(.inline)
+		.onAppear {
+			Task {
+				let result = try await  viewModel.fetchData(searchText: "the lord")
+				viewModel.book = result
+			} // Task
+		}
     }
 }
 
