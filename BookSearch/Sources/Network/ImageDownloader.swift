@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 actor ImageDownloader {
+	// MARK: Property
 	// 캐싱 구현하기 위해서 싱글톤 패턴 사용
 	static let shared = ImageDownloader()
 

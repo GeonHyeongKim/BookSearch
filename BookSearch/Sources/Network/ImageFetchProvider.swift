@@ -8,6 +8,7 @@
 import UIKit
 
 struct ImageFetchProvider {
+	// MARK: Property
 	static let shared = ImageFetchProvider()
 	
 	/// URL 을 가지고 data 를 다운받아서 UIImage 로 변환하는 메서드.

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BookCellView: View {
-	//MARK: Property Wrapper
+	// MARK: Property Wrapper
 	@State private var thumbnail: UIImage?
 	@State private var isLoading = true
 

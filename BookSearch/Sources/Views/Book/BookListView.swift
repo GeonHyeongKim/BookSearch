@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct BookListView: View {
-	//MARK: Property Wrapper
+	// MARK: Property Wrapper
 	@StateObject private var viewModel: BookViewModel = BookViewModel()
 	@State private var searchText = ""
-
-    var body: some View {
+	
+	var body: some View {
 		VStack {
 			HStack {
 				Image(systemName: "magnifyingglass")
@@ -49,7 +49,7 @@ struct BookListView: View {
 					ProgressView()
 						.scaleEffect(2)
 				}
-			}
+			} // ZStack
 		} // VStack
 		.padding()
 		.navigationTitle("검색 화면")
