@@ -20,7 +20,6 @@ struct BookDetailView: View {
 						.resizable()
 						.aspectRatio(contentMode: .fit)
 						.padding()
-					
 				} else {
 					Text("커버 이미지 없음")
 						.foregroundColor(.gray)

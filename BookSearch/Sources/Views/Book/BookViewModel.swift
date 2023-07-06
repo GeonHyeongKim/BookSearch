@@ -10,7 +10,8 @@ import Foundation
 class BookViewModel: ObservableObject {
 	//MARK: Property Wrapper
 	@Published var book: [Book]
-	@Published var pageInfo: Int = 1 // 현재 페이지
+	@Published var pageInfo: Int = 1 	// 현재 페이지
+	@Published var isLoading = false	// 검색 loading
 	
 	init (book: [Book] = []) {
 		self.book = book
