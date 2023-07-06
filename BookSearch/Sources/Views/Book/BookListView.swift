@@ -37,8 +37,18 @@ struct BookListView: View {
 			ZStack {
 				ScrollView {
 					LazyVStack {
-						ForEach(viewModel.book, id: \.self) { book in
+						ForEach(Array(viewModel.book.enumerated()), id: \.offset) { index, book in
 							BookCellView(book: book)
+								.onAppear {
+									if index == viewModel.book.count - 1 { // 맨 마지막
+										Task {
+											viewModel.isLoading = true
+											let result = try await viewModel.fetchMore(searchText: searchText)
+											viewModel.book += result // pagenation
+											viewModel.isLoading = false
+										} // Task
+									}
+								} // onAppear
 						} // ForEach
 					} // LazyVStack
 				} // ScrollView
@@ -59,8 +69,10 @@ struct BookListView: View {
 	func searchBookList() {
 		Task {
 			viewModel.isLoading = true // 로딩 시작
-			let result = try await viewModel.fetchData(searchText: searchText)
-			viewModel.book = result
+			if let result = try await viewModel.fetchData(searchText: searchText) {
+				viewModel.book = result.docs
+				viewModel.totalPageInfo = result.num_found / 100 + (result.num_found % 100 > 0 ? 1 : 0) // 100 단위로 받음, 나머지가 존재할 경우 반올림
+			}
 			viewModel.isLoading = false // 로딩 종료
 		} // Task
 	}
