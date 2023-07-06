@@ -17,6 +17,7 @@
 		C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02B2A5673D800EC962C /* APIConstants.swift */; };
 		C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02D2A56814600EC962C /* BookViewModel.swift */; };
 		C4ADF0302A56858000EC962C /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02F2A56858000EC962C /* BookCellView.swift */; };
+		C4ADF0342A5692BB00EC962C /* ImageFetchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF0332A5692BB00EC962C /* ImageFetchProvider.swift */; };
 		C4ADF03B2A56A39000EC962C /* ImageDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF03A2A56A39000EC962C /* ImageDownloadError.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		C4ADF02B2A5673D800EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		C4ADF02D2A56814600EC962C /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		C4ADF02F2A56858000EC962C /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
+		C4ADF0332A5692BB00EC962C /* ImageFetchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetchProvider.swift; sourceTree = "<group>"; };
 		C4ADF03A2A56A39000EC962C /* ImageDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 			children = (
 				C4ADF0392A56A18500EC962C /* Error */,
 				C4ADF02B2A5673D800EC962C /* APIConstants.swift */,
+				C4ADF0332A5692BB00EC962C /* ImageFetchProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
 				C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
+				C4ADF0342A5692BB00EC962C /* ImageFetchProvider.swift in Sources */,
 				C4ADF0302A56858000EC962C /* BookCellView.swift in Sources */,
 				C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */,
 				C4ADF0072A55982100EC962C /* BookListView.swift in Sources */,
