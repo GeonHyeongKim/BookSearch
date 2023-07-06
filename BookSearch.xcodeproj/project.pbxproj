@@ -81,8 +81,8 @@
 		C4ADEFFF2A55928E00EC962C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C4ADF0082A55A56600EC962C /* Modifiers */,
 				C4ADF0042A55972200EC962C /* Assets */,
+				C4ADF0082A55A56600EC962C /* Modifiers */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
