@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct BookCellView: View {
+	//MARK: Property Wrapper
+	@State private var image: UIImage?
+	@State private var isLoading = true
+
 	// MARK: - Properties
 	let book: Book
-	@State private var image: UIImage?
-	
+
     var body: some View {
 		NavigationLink(destination: EmptyView()) {
 			HStack {
@@ -21,16 +24,27 @@ struct BookCellView: View {
 							.resizable()
 							.scaledToFit()
 					} else {
-						Rectangle()
-							.fill(.clear)
-							.border(.gray)
+						ZStack {
+							Rectangle()
+								.fill(.clear)
+								.border(.gray)
+							
+							if isLoading {
+								ProgressView()
+							} else {
+								Text("이미지 없음")
+									.foregroundColor(.gray)
+									.font(.footnote)
+							}
+						} // ZStack
 					}
 				} // Group
 				.frame(width: 50, height: 100)
 				
 				Text(book.title ?? "제목 없음")
 					.foregroundColor(.black)
-					
+					.multilineTextAlignment(.leading)
+				
 				Spacer()
 			} // HStack
 		} // NavigationLink
@@ -41,8 +55,9 @@ struct BookCellView: View {
 						self.image = image
 					}
 				} catch {
-					print(error)
+					print(#file, #function, #line, error)
 				}
+				isLoading = false
 			} // Task
 		} // onAppear
     }
