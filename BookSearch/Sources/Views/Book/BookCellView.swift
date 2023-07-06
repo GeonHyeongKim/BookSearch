@@ -9,17 +9,17 @@ import SwiftUI
 
 struct BookCellView: View {
 	//MARK: Property Wrapper
-	@State private var image: UIImage?
+	@State private var thumbnail: UIImage?
 	@State private var isLoading = true
 
 	// MARK: - Properties
 	let book: Book
 
     var body: some View {
-		NavigationLink(destination: BookDetailView(book: book)) {
+		NavigationLink(destination: BookDetailView(book: book, thumbnail: thumbnail)) {
 			HStack {
 				Group {
-					if let image = image {
+					if let image = thumbnail {
 						Image(uiImage: image)
 							.resizable()
 							.scaledToFit()
@@ -52,7 +52,7 @@ struct BookCellView: View {
 			Task {
 				do {
 					if let image = try await ImageDownloader.shared.image(from: book.cover_i) {
-						self.image = image
+						self.thumbnail = image
 					}
 				} catch {
 					print("Error", #file, #function, #line, error)

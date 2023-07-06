@@ -21,7 +21,7 @@ actor ImageDownloader {
 		case L
 	}
 	
-	func image(from urlPath: Int?, size: Size = .S) async throws -> UIImage? {
+	func image(from urlPath: Int?, size: Size = .M) async throws -> UIImage? {
 		guard let urlPath = urlPath, let url = URL(string: APIConstants.Path.imageURLPath + "\(urlPath)-\(size).jpg") else {
 			throw ImageDownloadError.invalidURLString
 		}
