@@ -24,16 +24,19 @@ struct BookListView: View {
 			} // HStack
 			ScrollView {
 				LazyVStack {
-					Text("\(viewModel.book.count)")
-				}
-			}
+					ForEach(viewModel.book, id: \.self) { book in
+						BookCellView(book: book)
+					} // ForEach
+				} // LazyVStack
+			} // ScrollView
+			.padding(.top)
 		} // VStack
 		.padding()
 		.navigationTitle("검색 화면")
 		.navigationBarTitleDisplayMode(.inline)
 		.onAppear {
 			Task {
-				let result = try await  viewModel.fetchData(searchText: "the lord")
+				let result = try await viewModel.fetchData(searchText: "the lord")
 				viewModel.book = result
 			} // Task
 		}
