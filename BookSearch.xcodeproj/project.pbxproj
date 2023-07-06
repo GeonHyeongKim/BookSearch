@@ -17,6 +17,7 @@
 		C4ADF02C2A5673D800EC962C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02B2A5673D800EC962C /* APIConstants.swift */; };
 		C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02D2A56814600EC962C /* BookViewModel.swift */; };
 		C4ADF0302A56858000EC962C /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF02F2A56858000EC962C /* BookCellView.swift */; };
+		C4ADF03B2A56A39000EC962C /* ImageDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADF03A2A56A39000EC962C /* ImageDownloadError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C4ADF02B2A5673D800EC962C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		C4ADF02D2A56814600EC962C /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		C4ADF02F2A56858000EC962C /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
+		C4ADF03A2A56A39000EC962C /* ImageDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		C4ADF01B2A566D4B00EC962C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C4ADF0392A56A18500EC962C /* Error */,
 				C4ADF02B2A5673D800EC962C /* APIConstants.swift */,
 			);
 			path = Network;
@@ -163,6 +166,14 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C4ADF0392A56A18500EC962C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF03A2A56A39000EC962C /* ImageDownloadError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4ADF03B2A56A39000EC962C /* ImageDownloadError.swift in Sources */,
 				C4ADEFF42A55871500EC962C /* ContentView.swift in Sources */,
 				C4ADF02E2A56814600EC962C /* BookViewModel.swift in Sources */,
 				C4ADF00A2A55A59300EC962C /* TextFieldClearButton.swift in Sources */,
