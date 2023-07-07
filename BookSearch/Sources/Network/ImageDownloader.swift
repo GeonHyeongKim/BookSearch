@@ -55,11 +55,6 @@ actor ImageDownloader {
 		return image
 	}
 
-	/// 나이 더하기
-	/// - Parameters:
-	///   - a: a의 나이
-	///   - b: b의 나이
-	/// - Returns: 둘 나이의 합
 	private func downloadImage(from url: URL) async throws -> UIImage {
 		let imageFetchProvider = ImageFetchProvider.shared
 		return try await imageFetchProvider.fetchImage(with: url)
