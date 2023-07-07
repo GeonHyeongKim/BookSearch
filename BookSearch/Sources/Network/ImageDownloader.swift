@@ -13,7 +13,7 @@ actor ImageDownloader {
 	// 캐싱 구현하기 위해서 싱글톤 패턴 사용
 	static let shared = ImageDownloader()
 
-	// NSCache를 활용한 메로리 캐시 처리
+	// NSCache를 활용한 메모리 캐시 처리
 	private var cache: NSCache<NSString, UIImage> = .init()
 	
 	enum Size {
