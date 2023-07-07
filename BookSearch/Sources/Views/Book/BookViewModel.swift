@@ -14,13 +14,13 @@ class BookViewModel: ObservableObject {
 	@Published var isLoading = false		// 검색 loading
 	
 	// MARK: Property
-	var currentPage: Int = 1
+	var currentPage: Int = 1	// 현재 페이지 수
 
 	init (book: [Book] = []) {
 		self.book = book
 	}
 	
-	// 처음 데이터를 가져올때
+	// 데이터를 가져올때
 	func fetchData(searchText queryString: String, page: Int = 1) async throws -> BookResponse? {
 		guard let url = URL(string: APIConstants.Path.searchPath + queryString.replacingOccurrences(of: " ", with: "+") + "&page=\(page)") else { return nil }
 		
@@ -32,7 +32,7 @@ class BookViewModel: ObservableObject {
 	
 	// Pagenation
 	func fetchMore(searchText queryString: String) async throws -> [Book] {
-		if self.currentPage + 1 == totalPageInfo { // 맨마지막 페이지 일때,
+		if self.currentPage + 1 == totalPageInfo { // 마지막 페이지 일때
 			return []
 		}
 

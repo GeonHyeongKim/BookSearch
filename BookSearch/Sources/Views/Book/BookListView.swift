@@ -16,7 +16,7 @@ struct BookListView: View {
 		VStack {
 			HStack {
 				Image(systemName: "magnifyingglass")
-					.foregroundColor(Color.yellow)
+					.foregroundColor(.red)
 					.padding(.leading, 10)
 				
 				TextField("검색어를 입력해주세요", text: $searchText, onCommit: {
@@ -54,8 +54,8 @@ struct BookListView: View {
 				} // ScrollView
 				.padding(.top)
 				
+				// 로딩 중일 경우
 				if viewModel.isLoading {
-					// 로딩 중일 경우
 					ProgressView()
 						.scaleEffect(2)
 				}
