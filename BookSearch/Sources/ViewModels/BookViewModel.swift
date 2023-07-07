@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BookViewModel: ObservableObject {
+final class BookViewModel: ObservableObject {
 	// MARK: Property Wrapper
 	@Published var book: [Book]
 	@Published var totalPageInfo: Int = 1 	// 전체 페이지 수
