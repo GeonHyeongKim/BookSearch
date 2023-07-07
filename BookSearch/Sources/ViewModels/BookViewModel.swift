@@ -14,7 +14,7 @@ final class BookViewModel: ObservableObject {
 	@Published var isLoading = false		// 검색 loading
 	
 	// MARK: Property
-	var currentPage: Int = 1	// 현재 페이지 수
+	private var currentPage: Int = 1		// 현재 페이지 수
 
 	init (book: [Book] = []) {
 		self.book = book
