@@ -103,6 +103,7 @@
 				C4ADF00D2A565EF300EC962C /* Models */,
 				C4ADF01B2A566D4B00EC962C /* Network */,
 				C4ADF0022A5592E100EC962C /* Views */,
+				C4ADF03F2A57EC5D00EC962C /* ViewModels */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -138,7 +139,6 @@
 			children = (
 				C4ADF0062A55982100EC962C /* BookListView.swift */,
 				C4ADF02F2A56858000EC962C /* BookCellView.swift */,
-				C4ADF02D2A56814600EC962C /* BookViewModel.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -191,6 +191,14 @@
 				C4ADF03D2A56AD4100EC962C /* BookDetailView.swift */,
 			);
 			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		C4ADF03F2A57EC5D00EC962C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADF02D2A56814600EC962C /* BookViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
